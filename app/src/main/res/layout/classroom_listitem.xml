@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:elevation="5dp"
+    app:strokeColor="@color/colorPrimary"
+    app:strokeWidth="6dp"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+       >
+
+        <TextView
+            android:id="@+id/classroom_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="English"
+            android:textSize="24sp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/classroom_list_description"
+            android:layout_marginTop="8dp"
+            android:text="bde2jkdgkelrjvgfklerjfbeqjk;lvbsadlkdcbdskljcvdsjklvdsfjklvsjklvcbkjdvdsjklcvdakjjvjkdvdvjkc x sknc eklj"
+            android:textColor="#FF0000"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/list_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|right"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right"
+            android:text="teacher"
+            android:textColor="#FF0000"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

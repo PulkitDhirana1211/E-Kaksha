@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "246142954201",
+    "firebase_url": "https://e-kaksha-india.firebaseio.com",
+    "project_id": "e-kaksha-india",
+    "storage_bucket": "e-kaksha-india.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246142954201:android:331bbd149097c9746f2cc8",
+        "android_client_info": {
+          "package_name": "com.example.ekaksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246142954201-ta7jsbgcsb8a3kd3ofm5knc4bcuhrojf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQiB3Ta5gwNCkk1fiKz-TnXfW9-eFEEt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246142954201-ta7jsbgcsb8a3kd3ofm5knc4bcuhrojf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

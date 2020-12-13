@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+
+    android:layout_marginBottom="56dp"
+    tools:context=".Classroom_fragment">
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/clasroom_listview"
+        android:layout_margin="16dp"
+        android:dividerHeight="16sp"
+        android:divider="@color/whiteCardColor"
+        tools:listitem="@layout/classroom_listitem">
+
+    </ListView>
+
+
+</FrameLayout>

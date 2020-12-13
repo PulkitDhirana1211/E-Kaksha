@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_classroom"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="ClassRoom" />
+    <item
+        android:id="@+id/page_assignment"
+        android:enabled="true"
+        android:icon="?attr/actionModePasteDrawable"
+        android:title="Assignment" />
+    <item
+        android:id="@+id/page_join"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="create/join" />
+    <item
+        android:id="@+id/page_exams"
+        android:enabled="true"
+        android:icon="?attr/actionModeSelectAllDrawable"
+        android:title="Exams" />
+    <item
+        android:id="@+id/page_settings"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_secure"
+        android:title="Settings" />
+</menu>

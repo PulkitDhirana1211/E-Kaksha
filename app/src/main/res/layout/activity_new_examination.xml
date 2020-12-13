@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="com.example.ekaksha.NewAssignment">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/linear"
+                android:layout_marginLeft="30dp">
+
+
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:text="E-Kaksha"
+                    android:layout_marginTop="40dp"/>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/loginCard"
+                    app:cardCornerRadius="@dimen/loginCardRadius"
+                    android:elevation="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:layout_marginBottom="@dimen/loginViewsMargin"
+                    android:background="@color/whiteCardColor">
+
+                    <LinearLayout
+                        style="@style/linearParent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/loginViewsMargin">
+
+                        <TextView
+                            style="@style/headerTextPrimary"
+                            android:layout_marginTop="@dimen/loginViewsMargin"
+                            android:text="Create Examination" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                style="@style/modifiedEditText"
+                                android:inputType="textCapWords"
+                                android:id="@+id/new_examination_name"
+                                android:backgroundTint="@color/whiteCardColor"
+                                android:maxLines="1"
+                                android:hint="Name"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                style="@style/modifiedEditText"
+                                android:inputType="textEmailAddress"
+                                android:id="@+id/new_examination_description"
+                                android:backgroundTint="@color/whiteCardColor"
+                                android:scrollbars="vertical"
+                                android:hint="Description"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textInputLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                tools:ignore="MissingConstraints">
+
+                                <EditText
+                                    android:id="@+id/new_examination_numberquestion"
+                                    style="@style/modifiedEditText"
+                                    android:backgroundTint="@color/whiteCardColor"
+                                    android:hint="No of Ques"
+                                    android:inputType="number"
+                                    android:maxLines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_weight="1"
+                                tools:ignore="MissingConstraints">
+
+                                <EditText
+                                    android:id="@+id/new_examination_maximumMarks"
+                                    style="@style/modifiedEditText"
+                                    android:backgroundTint="@color/whiteCardColor"
+                                    android:hint="Maximum Marks"
+                                    android:inputType="number"
+                                    android:maxLines="1" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cst"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/new_examination_startTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:text="StartTime"
+                                app:layout_constraintEnd_toStartOf="@+id/textInputLayout"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="MissingConstraints" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/textInputLayout"
+                                android:layout_width="164dp"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/new_examination_startTime"
+                                tools:ignore="MissingConstraints">
+
+
+                                <EditText
+                                    android:id="@+id/new_examination_duration"
+                                   style="@style/modifiedEditText"
+                                    
+                                    android:backgroundTint="@color/whiteCardColor"
+                                    android:hint="Duration (Minutes)"
+                                    android:inputType="number"
+
+                                    android:maxLines="1"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteY="2dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                style="@style/modifiedEditText"
+                                android:inputType="textCapWords"
+                                android:id="@+id/new_examination_question"
+                                android:backgroundTint="@color/whiteCardColor"
+                                android:hint="Question"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                style="@style/modifiedEditText"
+                                android:inputType="text"
+                                android:id="@+id/new_examination_option1"
+                                android:backgroundTint="@color/whiteCardColor"
+                                android:scrollbars="vertical"
+                                android:hint="Option 1"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                style="@style/modifiedEditText"
+                                android:inputType="text"
+                                android:id="@+id/new_examination_option2"
+                                android:backgroundTint="@color/whiteCardColor"
+                                android:scrollbars="vertical"
+                                android:hint="Option 2"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                style="@style/modifiedEditText"
+                                android:inputType="text"
+                                android:id="@+id/new_examination_option3"
+                                android:backgroundTint="@color/whiteCardColor"
+                                android:scrollbars="vertical"
+                                android:hint="Option 3"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/parent"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+                            <EditText
+                                style="@style/modifiedEditText"
+                                android:inputType="text"
+                                android:id="@+id/new_examination_option4"
+                                android:backgroundTint="@color/whiteCardColor"
+                                android:scrollbars="vertical"
+                                android:hint="Option 4"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cst1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/new_examination_previous"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Previous"
+                                tools:ignore="MissingConstraints" />
+
+                            <Button
+                                android:id="@+id/new_examination_next"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Next"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                tools:ignore="MissingConstraints" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <Button
+                            style="@style/loginButton"
+                            android:layout_marginTop="24dp"
+                            android:layout_gravity="center"
+                            android:id="@+id/new_examination_create"
+                            android:text="Create" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

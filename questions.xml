@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/loginCard">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <TextView
+        android:layout_weight="1"
+        style="@style/headerTextPrimary"
+        android:text="Computer Examination"
+        android:padding="8sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_weight="1"
+        style="@style/parent">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:hint="no of questions"
+            android:inputType="number"
+            android:backgroundTint="@color/whiteCardColor"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/button"
+
+            style="@style/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteCardColor"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/maintimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="90:00"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/whiteCardColor"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/b11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Start"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Input"
+            android:layout_weight="1"
+            style="@style/parent">
+            <EditText
+                android:id="@+id/Option1"
+                android:hint="question 1"
+                style="@style/modifiedEditText"
+                android:textSize="16sp"
+                android:backgroundTint="@color/whiteCardColor"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/op1"
+            android:layout_weight="1"
+            style="@style/parent">
+            <EditText
+                android:id="@+id/Option2"
+                style="@style/modifiedEditText"
+                android:backgroundTint="@color/whiteCardColor"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:hint="Option A Java"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/op2"
+            android:layout_weight="1"
+            style="@style/parent">
+            <EditText
+                android:id="@+id/Question_1"
+                style="@style/modifiedEditText"
+                android:backgroundTint="@color/whiteCardColor"
+                android:inputType="text"
+                android:hint="Option B Python"
+                android:textSize="16sp"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/op3"
+            android:layout_weight="1"
+            style="@style/parent">
+            <EditText
+                android:id="@+id/Option3"
+                style="@style/modifiedEditText"
+                android:backgroundTint="@color/whiteCardColor"
+                android:inputType="number"
+                android:hint="Option C R"
+                android:textSize="16sp"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/op4"
+            android:layout_weight="1"
+            style="@style/parent">
+            <EditText
+                android:id="@+id/Option4"
+                style="@style/modifiedEditText"
+                android:backgroundTint="@color/whiteCardColor"
+                android:inputType="number"
+                android:hint="Option D C++"
+                android:textSize="16sp"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginTop="16sp"
+                android:layout_marginLeft="8sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_margin="12sp"
+                android:background="@drawable/shaping"
+                android:text="Previous"
+                />
+            <Button
+                android:layout_marginTop="16sp"
+                android:layout_marginRight="8sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_margin="12sp"
+                android:background="@drawable/shaping"
+                android:text="Next"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
